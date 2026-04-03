@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Sans, JetBrains_Mono, Syne } from "next/font/google";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const fontSans = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -47,17 +48,21 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
       className={`${fontSans.variable} ${fontDisplay.variable} ${fontMono.variable}`}
     >
-      <body className="font-sans min-h-screen">{children}</body>
+      <body className="font-sans min-h-screen">
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
