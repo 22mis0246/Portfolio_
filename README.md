@@ -10,14 +10,5 @@ My Portfolio that showcase my skills and achievements as a pre final year studen
 - Vercel-ready deployment (Next build output)
 ## What’s Included (Pages / Sections)
 - `Home (/ )`: Hero + About + Education + Projects + Skills + Certifications + Interests + Contact
+- <img width="1812" height="795" alt="image" src="https://github.com/user-attachments/assets/4f936fda-6500-473a-9497-c1d7acabd8a2" />
 
-### Landing / Hero
-![Landing / Hero](./public/screenshots/01-hero.png)
-### About + Education
-![About + Education](./public/screenshots/02-about-education.png)
-### Projects
-![Projects](./public/screenshots/03-projects.png)
-### Skills + Certifications
-![Skills + Certifications](./public/screenshots/04-skills-certs.png)
-### Contact
-![Contact](./public/screenshots/05-contact.png)
