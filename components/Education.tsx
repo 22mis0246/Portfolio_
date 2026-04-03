@@ -23,6 +23,24 @@ export function Education() {
               transition={{ duration: 0.45, delay: i * 0.08 }}
               className="group relative overflow-hidden rounded-2xl border border-surface-border bg-surface-raised/40 p-6 transition hover:border-accent/25 md:p-8"
             >
+              {item.logo && (
+                <img
+                  src={item.logo}
+                  alt=""
+                  aria-hidden
+                  className="pointer-events-none absolute top-0 select-none"
+     style={{
+  left: item.logoLeft ?? "32%",
+  width: item.logoWidth ?? "72%",
+  height: "100%",
+  objectFit: "contain",
+  objectPosition: "center",
+  opacity: 1,
+  filter: item.logoTint ?? "none",
+  mixBlendMode: "luminosity" as React.CSSProperties["mixBlendMode"],
+}}
+                />
+              )}
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="flex gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent-muted text-accent">

@@ -15,12 +15,17 @@ export const education = [
     school: "Vellore Institute of Technology, Vellore",
     period: "Expected: 2027",
     detail: "CGPA: 7.98 / 10",
+    logo: "/images/vit-logo.png",
   },
   {
     degree: "Higher Secondary Education (Class XII)",
     school: "Sunbeam Matric Higher Secondary School, Vellore",
     period: "2022",
     detail: "Percentage: 84.1%",
+    logo: "/images/sunbeam-logo.png",
+    logoTint: "opacity(0.13)",
+    logoWidth: "25%",   
+    logoLeft: "55%",
   },
 ];
 
