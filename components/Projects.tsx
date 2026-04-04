@@ -45,6 +45,7 @@ export function Projects() {
                 {project.name}
               </h3>
               <p className="mt-1 text-sm text-ink-faint">{project.subtitle}</p>
+
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.stack.map((tech) => (
                   <span
@@ -63,6 +64,17 @@ export function Projects() {
                   </li>
                 ))}
               </ul>
+              {project.repoUrl && (
+                <a
+                  href={project.repoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 flex items-center justify-center gap-2 rounded-xl border border-surface-border py-2.5 text-xs font-medium text-ink-muted transition hover:border-accent/50 hover:text-accent hover:bg-accent-muted"
+                >
+                  <ExternalLink size={13} />
+                  View Repository
+                </a>
+              )}
             </motion.article>
           ))}
         </div>

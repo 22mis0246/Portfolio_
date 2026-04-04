@@ -23,7 +23,7 @@ export const education = [
     period: "2022",
     detail: "Percentage: 84.1%",
     logo: "/images/sunbeam-logo.png",
-    logoTint: "opacity(0.13)",
+    logoTint: "opacity(1)",
     logoWidth: "25%",   
     logoLeft: "55%",
   },
@@ -47,8 +47,8 @@ export const projects = [
       "Implemented a dynamic dashboard with Net worth calculation, financial insights, and secure user authentication.",
       "Designed scalable REST APIs using Express and Prisma ORM with PostgreSQL for efficient data handling.",
     ],
-    liveUrl: null as string | null,
-    repoUrl: null as string | null,
+    liveUrl: "https://onespot-frontend.onrender.com/",
+    repoUrl: "https://github.com/22mis0246/onespot-finance",
   },
   {
     name: "Flower Classification",
@@ -66,7 +66,7 @@ export const projects = [
       "Built an end-to-end pipeline covering data preprocessing, model training, and a real-time prediction module with confidence scoring via NumPy, Pillow, and Matplotlib.",
     ],
     liveUrl: null,
-    repoUrl: null as string | null,
+    repoUrl: "https://github.com/22mis0246/Flower-CNN-Classifier",
   },
   {
     name: "Medical Device Predictive Monitoring System",
@@ -85,7 +85,7 @@ export const projects = [
       "Implemented role-based JWT authentication (Admin/Technician) with a live monitoring dashboard and device data simulator for end-to-end system validation.",
     ],
     liveUrl: null,
-    repoUrl: null as string | null,
+    repoUrl: "https://github.com/22mis0246/medical-device-predictive-maintenance",
   },
 ];
 
