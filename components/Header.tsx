@@ -17,7 +17,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-surface-border/80 bg-surface/80 backdrop-blur-xl">
+    <header className="fixed top-0 left-0 right-0 z-[100] isolate border-b border-surface-border/80 bg-surface md:bg-surface/80 backdrop-blur-none md:backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a
           href="#"
@@ -40,7 +40,7 @@ export function Header() {
 
         <button
           type="button"
-          className="rounded-lg p-2 text-ink md:hidden"
+          className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-ink md:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           onClick={() => setOpen(!open)}
         >
@@ -54,7 +54,7 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="border-t border-surface-border bg-surface/95 backdrop-blur-xl md:hidden"
+            className="border-t border-surface-border bg-surface backdrop-blur-none md:bg-surface/95 md:backdrop-blur-xl md:hidden"
           >
             <div className="flex flex-col px-4 py-4">
               {nav.map((item) => (
