@@ -17,20 +17,20 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   function handleMobileNavClick(
-    e: React.MouseEvent<HTMLAnchorElement>,
-    href: string,
-  ) {
-    e.preventDefault();
-    setOpen(false);
-    const id = href.startsWith("#") ? href.slice(1) : href;
-    requestAnimationFrame(() => {
-      document.getElementById(id)?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-      window.history.replaceState(null, "", href);
+  e: React.MouseEvent<HTMLAnchorElement>,
+  href: string,
+) {
+  e.preventDefault();
+  setOpen(false);
+  const id = href.startsWith("#") ? href.slice(1) : href;
+  setTimeout(() => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
     });
-  }
+    window.history.replaceState(null, "", href);
+  }, 300); // matches Framer Motion exit duration
+}
 
   return (
     <header className="fixed top-0 left-0 right-0 z-[100] isolate border-b border-surface-border/80 bg-surface md:bg-surface/80 backdrop-blur-none md:backdrop-blur-xl">
