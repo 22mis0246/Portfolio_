@@ -9,12 +9,28 @@ const nav = [
   { href: "#education", label: "Education" },
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
-  { href: "#certifications", label: "Certs" },
+  { href: "#certifications", label: "Certifications" },
   { href: "#contact", label: "Contact" },
 ];
 
 export function Header() {
   const [open, setOpen] = useState(false);
+
+  function handleMobileNavClick(
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) {
+    e.preventDefault();
+    setOpen(false);
+    const id = href.startsWith("#") ? href.slice(1) : href;
+    requestAnimationFrame(() => {
+      document.getElementById(id)?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+      window.history.replaceState(null, "", href);
+    });
+  }
 
   return (
     <header className="fixed top-0 left-0 right-0 z-[100] isolate border-b border-surface-border/80 bg-surface md:bg-surface/80 backdrop-blur-none md:backdrop-blur-xl">
@@ -62,7 +78,7 @@ export function Header() {
                   key={item.href}
                   href={item.href}
                   className="rounded-lg px-3 py-3 text-ink-muted transition hover:bg-accent-muted hover:text-accent"
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => handleMobileNavClick(e, item.href)}
                 >
                   {item.label}
                 </a>
