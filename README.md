@@ -1,6 +1,8 @@
 # Portfolio_
 My Portfolio that showcase my skills and achievements as a pre final year student.
-- <img width="1812" height="795" alt="image" src="https://github.com/user-attachments/assets/4f936fda-6500-473a-9497-c1d7acabd8a2" />
+
+<img width="1631" height="748" alt="image" src="https://github.com/user-attachments/assets/5fbcea39-b6e7-4952-a334-052e808cb116" />
+
 ## Tech Stack
 - Next.js (App Router) + React
 - TypeScript
