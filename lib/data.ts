@@ -57,13 +57,13 @@ export const projects = [
       "Python",
       "TensorFlow",
       "CNN",
-      "scikit-learn",
-      "OpenCV",
+      "Keras",
+      "Pillow",
       "NumPy",
     ],
     highlights: [
-      "Designed a multi-class flower image classifier with Conv2D, MaxPooling, and Softmax layers for hierarchical feature extraction and classification across 5 categories.",
-      "Built an end-to-end pipeline covering data preprocessing, model training, and a real-time prediction module with confidence scoring via NumPy, Pillow, and Matplotlib.",
+      "Developed a multi-class flower image classification system using Convolutional Neural Networks (CNN) with Conv2D, MaxPooling, ReLU, and Softmax layers to classify 5 flower categories.",
+      "Implemented a plant health analysis module using RGB-to-HSV color analysis to estimate visible dryness, overwatering, and poor lighting conditions from flower images using Pillow and NumPy.",
     ],
     liveUrl: null,
     repoUrl: "https://github.com/22mis0246/Flower-CNN-Classifier",
@@ -106,8 +106,6 @@ export const skillGroups = [
       "REST APIs",
       "PostgreSQL",
       "Prisma ORM",
-      "SQLAlchemy",
-      "FastAPI",
     ],
   },
   {
@@ -156,9 +154,8 @@ export const certifications = [
 export const interests = {
   technical: [
     "Generative AI",
-    "Machine Learning",
-    "Cloud Technologies",
-    "Data Analytics",
+    "Cloud Technologies ",
+    "Blockchain Technology",
   ],
   nonTechnical: [
     "Videography",
