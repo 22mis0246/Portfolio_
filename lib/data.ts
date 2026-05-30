@@ -14,7 +14,7 @@ export const education = [
     degree: "Integrated MTech in Software Engineering",
     school: "Vellore Institute of Technology, Vellore",
     period: "Expected: 2027",
-    detail: "CGPA: 7.98 / 10",
+    detail: "CGPA: 8.01 / 10",
     logo: "/images/vit-logo.png",
   },
   {
