@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Sans, JetBrains_Mono, Syne } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const fontSans = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -62,6 +63,7 @@ export default function RootLayout({
       <body className="font-sans min-h-screen">
         {children}
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
