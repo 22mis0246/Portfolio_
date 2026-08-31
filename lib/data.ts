@@ -65,7 +65,6 @@ export const projects = [
     liveUrl: null,
     repoUrl: "https://github.com/22mis0246/Flower-CNN-Classifier",
   },
-  {
     {
   name: "Real-Time RAG-Based Hallucination Firewall for LLMs",
   subtitle: "Ongoing SDD Project",
