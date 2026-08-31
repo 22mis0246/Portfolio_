@@ -1,6 +1,6 @@
 export const profile = {
   name: "NAVEEN RAJ M",
-  title: "Software Engineering Student",
+  title: "Final Year Software Engineering Student",
   phone: "+91 8667484806",
   email: "naveenofficial573@gmail.com",
   linkedin: "https://www.linkedin.com/in/naveen-raj-m-794061256/",
