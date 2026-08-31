@@ -27,7 +27,7 @@ export function Hero() {
               transition={{ duration: 0.5 }}
               className="font-mono text-xs uppercase tracking-[0.25em] text-accent"
             >
-              Software engineering · Full-stack · ML
+              Generative AI · Full-stack · Machine Learning
             </motion.p>
 
             <motion.h1

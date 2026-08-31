@@ -1,9 +1,9 @@
 export const profile = {
   name: "NAVEEN RAJ M",
-  title: "Software Engineering Student · Full-Stack & ML",
+  title: "Software Engineering Student",
   phone: "+91 8667484806",
   email: "naveenofficial573@gmail.com",
-  linkedin: "https://www.linkedin.com/in/naveen-raj-794061256/",
+  linkedin: "https://www.linkedin.com/in/naveen-raj-m-794061256/",
   github: "https://github.com/22mis0246",
   summary:
     "Passionate software engineering student with hands-on experience in full-stack web development, data analytics, and machine learning. Proficient in building secure, scalable web applications from robust backend APIs and database design to responsive frontend interfaces. Experienced in extracting insights from data and integrating AI and ML capabilities into real-world workflows. Grounded in core computer science principles with a practical, build-first approach. Eager to work on challenging problems alongside teams that value engineering quality, intelligent systems, and continuous learning.",
@@ -37,15 +37,12 @@ export const projects = [
       "Node.js",
       "Express",
       "PostgreSQL",
-      "Prisma ORM",
       "React",
-      "TypeScript",
       "REST API",
     ],
     highlights: [
-      "Engineered a full-stack personal finance platform centralizing expense tracking, liability management, goal planning, and investment monitoring.",
-      "Implemented a dynamic dashboard with Net worth calculation, financial insights, and secure user authentication.",
-      "Designed scalable REST APIs using Express and Prisma ORM with PostgreSQL for efficient data handling.",
+      "Engineered a full-stack personal finance platform integrating expense tracking, investment management, liabilities, financial goals, and dashboard analytics into a unified application.",
+      "Deployed the application on Render with a live database and real-time stock price updates, while continuously expanding the platform with additional financial modules and features",
     ],
     liveUrl: "https://onespot-frontend.onrender.com/",
     repoUrl: "https://github.com/22mis0246/onespot-finance",
@@ -63,41 +60,55 @@ export const projects = [
     ],
     highlights: [
       "Developed a multi-class flower image classification system using Convolutional Neural Networks (CNN) with Conv2D, MaxPooling, ReLU, and Softmax layers to classify 5 flower categories.",
-      "Implemented a plant health analysis module using RGB-to-HSV color analysis to estimate visible dryness, overwatering, and poor lighting conditions from flower images using Pillow and NumPy.",
+      "Implemented a health analysis module using RGB-to-HSV color analysis to estimate visible dryness, overwatering, and poor lighting conditions from flower images using Pillow and NumPy.",
     ],
     liveUrl: null,
     repoUrl: "https://github.com/22mis0246/Flower-CNN-Classifier",
   },
   {
-    name: "Medical Device Predictive Monitoring System",
-    subtitle: "Real-time anomaly detection & alerts",
-    stack: [
-      "Python",
-      "FastAPI",
-      "PostgreSQL",
-      "SQLAlchemy",
-      "scikit-learn",
-      "Streamlit",
-      "Plotly",
-    ],
-    highlights: [
-      "Developed a real-time predictive maintenance system using Isolation Forest anomaly detection to monitor medical device sensor data and trigger automated critical alerts.",
-      "Implemented role-based JWT authentication (Admin/Technician) with a live monitoring dashboard and device data simulator for end-to-end system validation.",
-    ],
-    liveUrl: null,
-    repoUrl: "https://github.com/22mis0246/medical-device-predictive-maintenance",
-  },
-];
+    {
+  name: "Real-Time RAG-Based Hallucination Firewall for LLMs",
+  subtitle: "Ongoing SDD Project",
+  stack: [
+    "Python",
+    "RAG",
+    "Ollama",
+    "ChromaDB",
+    "FAISS",
+    "NLI",
+  ],
+  highlights: [
+    "Designed a real-time hallucination verification architecture for LLM-based banking customer support to reduce unsupported or contradictory information reaching end users.",
 
+    "Proposed a claim-level verification pipeline combining RAG, atomic factual claim extraction, trusted evidence retrieval, and Natural Language Inference (NLI) for real-time response validation.",
+
+    "Designed an intervention workflow to classify generated claims as entailment, contradiction, or unsupported, followed by suppression or evidence-grounded regeneration before final response delivery.",
+  ],
+  liveUrl: null,
+  repoUrl: null,
+},
+];
 export const skillGroups = [
   {
-    title: "Programming Languages",
-    items: ["Java", "SQL", "Python", "C / C++", "JavaScript"],
+    title: "Core CS & Programming",
+    items: [
+      "Java",
+      "Data Structures",
+      "Computer Networks",
+      "OOP",
+      "DBMS",
+      "Operating Systems",
+    ],
   },
+
   {
-    title: "Frontend",
-    items: ["React", "HTML", "Tailwind CSS"],
+    title: "Authentication & Security",
+    items: [
+      "JWT Authentication",
+      "Password Hashing (bcrypt)",
+    ],
   },
+
   {
     title: "Backend & Databases",
     items: [
@@ -105,62 +116,54 @@ export const skillGroups = [
       "Express.js",
       "REST APIs",
       "PostgreSQL",
-      "Prisma ORM",
     ],
   },
+
   {
     title: "AI & Machine Learning",
     items: [
       "Model Training & Optimization",
-      "Supervised Learning",
       "Deep Learning",
+      "LLM and RAG Fundamentals",
     ],
   },
+
   {
     title: "Methodologies & Tools",
     items: [
       "SDLC",
       "Agile (Scrum)",
-      "Version Control",
       "GitHub",
-      "Microsoft Excel",
-      "Cross-functional Collaboration",
-    ],
-  },
-  {
-    title: "Authentication & Security",
-    items: ["JWT Authentication", "Password Hashing (bcrypt)"],
-  },
-  {
-    title: "Core CS Concepts",
-    items: [
-      "Data Structures",
-      "OOP",
-      "DBMS",
-      "Computer Networks",
-      "Operating Systems",
+      "Postman",
     ],
   },
 ];
 
 export const certifications = [
   {
-    name: "Full Stack Development",
+    name: "Full Stack Web Development",
     issuer: "Udemy",
-    certificateUrl: null as string | null,
+    certificateUrl:
+      "https://drive.google.com/file/d/189tGZ4LyX8mbYgTFsK681HPpGFvcnCSH/view",
+  },
+  {
+    name: "Generative AI Leader",
+    issuer: "Google",
+    certificateUrl:
+      "https://drive.google.com/file/d/1ewDvNjln8DpYfk4oiwz49dG7DGduP4Pj/view",
   },
 ];
 
 export const interests = {
   technical: [
     "Generative AI",
-    "Cloud Technologies ",
-    "Blockchain Technology",
+    "Cloud Technologies",
+    "Machine Learning",
   ],
+
   nonTechnical: [
     "Videography",
     "Editing",
-    "Event Coordination",
     "Stock Market Analysis",
   ],
 };
